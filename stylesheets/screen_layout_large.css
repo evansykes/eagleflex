@@ -3,30 +3,41 @@
 /* Layout (global rules for all sizes) */
 
 body { margin: 0px; padding: 0px; }
-header a.logo { display: block; position: absolute; background-position: 0px 0px; background-repeat: no-repeat; }
-nav {
-	width: 100%;
-	display: block;
-	position: absolute;
+
+.container { width:960px; margin:auto;
 }
 
-/* Layout Large Screens (default for older browsers) */
+
+.col1 { width: 59%; margin: 0px 2.02020202% 0px 2.02020202%; }
+.col2 { width: 29.96969696969697%; margin: 0px 0px 0px 2.02020202%; }
 
 
-.col1 { width: 31.96969696969697%; margin: 0px 0px 0px 2.02020202%; }
-.col2 { width: 31.96969696969697%; margin: 0px 0px 0px 2.02020202%; }
-.col3 { width: 31.96969696969697%; margin: 0px 0px 0px 2.02020202%; }
-
+.col1, .col2 {
+	/*margin: 0 10px 10px 0;*/
+	float:left;
+	display:block;}
 
 nav { top: 75px; }
 nav a { margin: 12px 0px 10px 20px; }
 
 
-@media screen and (max-width: 990px) {
-	footer { padding-left: 20px; }
-}
 
 .bodytext {
-text-align:justify; column-width: 
+text-align:justify;
 
 }
+
+.chart_data {
+	background-color:#FFFFFF;
+	border: 1px dotted #CCC;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	text-indent:hanging;
+	padding:2%;
+	}
+
+.chart_data img {width:97%; margin:1.5%;}
+
+
